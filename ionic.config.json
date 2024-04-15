@@ -1,0 +1,7 @@
+{
+  "name": "GreenLite",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
