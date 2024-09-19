@@ -1,28 +1,89 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      <img src="assets/Logo_GreenLite_4.png" height="40px" alt="">
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+<ion-menu contentId="main-content">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Tabwrwqr dwdwfwfwq </ion-title>
+      <ion-title>Категорії знижок</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-content class="ion-padding">
+    <ion-accordion-group>
+      <ion-accordion value="first">
+        <ion-item slot="header" color="light">
+          <ion-thumbnail style="width:30px;height:30px" slot="start">
+            <img src="/assets/icon/category/health-and-care-1.png"  alt="Здоров`я та краса">
+          </ion-thumbnail>
+          <ion-label><a href="tab1.page.html"> Здоров`я та краса </a></ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">First Content</div>
+      </ion-accordion>
+      <ion-accordion value="second">
+        
+        <ion-item slot="header" color="light">
+          <ion-thumbnail style="width:30px;height:30px" slot="start">
+            <img src="/assets/icon/category/health-and-care-1.png" alt="Здоров`я та краса">
+          </ion-thumbnail>
+          <ion-label><a href="tab1.page.html"> Здоров`я та краса </a></ion-label>
+        </ion-item>
+        <div class="ion-padding" slot="content">Second Content</div>
+      </ion-accordion>
+     
+    </ion-accordion-group>
+    
+  
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        <img src="assets/Logo_GreenLite_4.png" height="40px" alt="">
+      </ion-title>
+      <ion-list slot="end">
+        
+        <ion-item>
+          <ion-icon name="language-outline"></ion-icon>
+          <ion-select aria-label="Fruit" interface="popover" placeholder="Мова">
+            <ion-select-option value="apples">Apples</ion-select-option>
+            <ion-select-option value="oranges">Oranges</ion-select-option>
+            <ion-select-option value="bananas">Bananas</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <ion-list slot="end">
+      <ion-item>
+        <ion-icon name="globe-outline"></ion-icon>
+        <ion-select aria-label="Fruit" interface="popover" placeholder="Країна">
+          <ion-select-option value="apples">Apples</ion-select-option>
+          <ion-select-option value="oranges">Oranges</ion-select-option>
+          <ion-select-option value="bananas">Bananas</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content [fullscreen]="true">
+  
 
-  <swiper-container>
-    <swiper-slide><img src="/assets/icon/images/665dd9e2d0ae9.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="/assets/icon/images/665dd9e2d0ae9.jpg" alt=""></swiper-slide>
-    <swiper-slide><img src="/assets/icon/images/665dd9e2d0ae9.jpg" alt=""></swiper-slide>
-  </swiper-container>
-  <ion-grid>
-    <ion-row>
-      <ion-col><img src="/assets/icon/images/grenlite-coin.jpg" alt=""></ion-col>
-      <ion-col><img src="/assets/icon/images/referral-programm.jpg" alt=""></ion-col>
-      
-    </ion-row>
-  </ion-grid>
-</ion-content>
+    <swiper-container>
+      <swiper-slide><img src="/assets/icon/images/665dd9e2d0ae9.jpg" alt=""></swiper-slide>
+      <swiper-slide><img src="/assets/icon/images/665dd9e2d0ae9.jpg" alt=""></swiper-slide>
+      <swiper-slide><img src="/assets/icon/images/665dd9e2d0ae9.jpg" alt=""></swiper-slide>
+    </swiper-container>
+    <ion-segment value="default">
+      <ion-segment-button value="default">
+        <ion-label>Здоров`я та краса</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="segment">
+        <ion-label>Здоров`я та краса</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="segment2">
+        <ion-label>Здоров`я та краса</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-content>
+</div>
+
+
