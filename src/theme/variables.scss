@@ -1,9 +1,10 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
-
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
+  --ion-font-family: "Rubik", sans-serif;
   --ion-color-primary: #2fc74c;
   --ion-color-primary-rgb: 47, 199, 76;
   --ion-color-primary-contrast: #000000;

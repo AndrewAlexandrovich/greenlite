@@ -38,14 +38,15 @@
       <ion-buttons slot="start">
         <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-title>
-        <img src="assets/Logo_GreenLite_4.png" height="40px" alt="">
-      </ion-title>
+      
+        <img src="assets/Logo_GreenLight.png" height="40px" alt="">
+      
       <ion-list slot="end">
         
-        <ion-item>
-          <ion-icon name="language-outline"></ion-icon>
-          <ion-select aria-label="Fruit" interface="popover" placeholder="Мова">
+        <ion-item color="light">
+          
+          <ion-select class="lang" aria-label="Fruit" interface="popover" placeholder="Мова" >
+            <ion-icon slot="start" name="language-outline" color="primary" size="small"></ion-icon>
             <ion-select-option value="apples">Apples</ion-select-option>
             <ion-select-option value="oranges">Oranges</ion-select-option>
             <ion-select-option value="bananas">Bananas</ion-select-option>
@@ -53,9 +54,10 @@
         </ion-item>
       </ion-list>
       <ion-list slot="end">
-      <ion-item>
-        <ion-icon name="globe-outline"></ion-icon>
-        <ion-select aria-label="Fruit" interface="popover" placeholder="Країна">
+      <ion-item color="light">
+        
+        <ion-select class="lang" aria-label="Fruit" interface="popover" placeholder="Країна">
+          <ion-icon slot="start" name="globe-outline" color="primary" size="small" ></ion-icon>
           <ion-select-option value="apples">Apples</ion-select-option>
           <ion-select-option value="oranges">Oranges</ion-select-option>
           <ion-select-option value="bananas">Bananas</ion-select-option>
